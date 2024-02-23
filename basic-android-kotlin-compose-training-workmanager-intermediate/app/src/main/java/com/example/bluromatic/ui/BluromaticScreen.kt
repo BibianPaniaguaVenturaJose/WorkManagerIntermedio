@@ -78,9 +78,11 @@ fun BluromaticScreen(blurViewModel: BlurViewModel = viewModel(factory = BlurView
             .fillMaxSize()
             .statusBarsPadding()
             .padding(
-                start = WindowInsets.safeDrawing.asPaddingValues()
+                start = WindowInsets.safeDrawing
+                    .asPaddingValues()
                     .calculateStartPadding(layoutDirection),
-                end = WindowInsets.safeDrawing.asPaddingValues()
+                end = WindowInsets.safeDrawing
+                    .asPaddingValues()
                     .calculateEndPadding(layoutDirection)
             )
     ) {
